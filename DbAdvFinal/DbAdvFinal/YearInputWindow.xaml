@@ -1,0 +1,16 @@
+﻿<Window x:Class="DbAdvFinal.YearInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbAdvFinal"
+        mc:Ignorable="d"
+        Title="영어이름 찾기" Height="400" Width="600">
+    <Grid>
+        <TextBlock x:Name="MessageSpace" Height="32" Margin="172,31,164,306" TextWrapping="Wrap" Text="태어난 해를 입력해 주세요." Width="256" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" TextAlignment="Center"/>
+
+        <TextBox x:Name="Year" HorizontalAlignment="Center" Height="80" Margin="0,97,0,0" TextWrapping="Wrap" Text="태어난 해" VerticalAlignment="Top" Width="268" GotFocus="Year_GotFocus"/>
+        <Button Content="다음" HorizontalAlignment="Center" Height="72" Margin="0,234,0,0" VerticalAlignment="Top" Width="133" Click="Button_Click"/>
+
+    </Grid>
+</Window>

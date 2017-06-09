@@ -1,0 +1,22 @@
+﻿<Window x:Class="DbAdvFinal.NameInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbAdvFinal"
+        mc:Ignorable="d"
+        Title="영어이름 찾기w" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="185*"/>
+            <RowDefinition Height="70*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Height="32" Margin="169,38,169.6,46" TextWrapping="Wrap" Text="이름을 입력해 주세요" Width="255" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" TextAlignment="Center"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="44" Margin="167,39,0,0" TextWrapping="Wrap" Text="성" VerticalAlignment="Top" Width="100" Grid.Row="1" FontSize="20" GotFocus="LastName_GotFocus" />
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="44" Margin="272,39,0,0" TextWrapping="Wrap" Text="이름" VerticalAlignment="Top" Width="176" Grid.Row="1" FontSize="20" GotFocus="FirstName_GotFocus"/>
+        <Button Content="다음" HorizontalAlignment="Left" Height="46" Margin="235,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Background="#FF3692D3" Click="Button_Click"/>
+
+    </Grid>
+</Window>
